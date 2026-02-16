@@ -1,0 +1,20 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Objects","order":2,"path":"folders/Objects.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Backdrop","order":4,"path":"folders/Sprites/Backdrop.yy",},
+    {"name":"Others","order":3,"path":"folders/Sprites/Others.yy",},
+    {"name":"Platforms","order":1,"path":"folders/Sprites/Platforms.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Font1","order":4,"path":"fonts/Font1/Font1.yy",},
+    {"name":"ocontroller","order":4,"path":"objects/ocontroller/ocontroller.yy",},
+    {"name":"oFlag","order":3,"path":"objects/oFlag/oFlag.yy",},
+    {"name":"oPlatform1x1","order":2,"path":"objects/oPlatform1x1/oPlatform1x1.yy",},
+    {"name":"oPlatform1x2","order":5,"path":"objects/oPlatform1x2/oPlatform1x2.yy",},
+    {"name":"oSolid","order":1,"path":"objects/oSolid/oSolid.yy",},
+    {"name":"main_end","order":3,"path":"rooms/main_end/main_end.yy",},
+    {"name":"sPlatform1x2","order":1,"path":"sprites/sPlatform1x2/sPlatform1x2.yy",},
+    {"name":"Sprite4","order":1,"path":"sprites/Sprite4/Sprite4.yy",},
+  ],
+}

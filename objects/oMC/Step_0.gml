@@ -1,0 +1,28 @@
+x_speed = 0; 
+y_speed = 0; 
+walk_speed = 1;
+
+x_speed = 0; // reset horizontal speed 
+y_speed += 0.5; // add gravity to y_speed
+
+if keyboard_check(vk_right) {
+    x_speed = walk_speed; 
+    image_xscale = 1; // flip heidi's sprite so she faces right
+} else if keyboard_check(vk_left) {
+    x_speed = -walk_speed; 
+    image_xscale = -1; // reset her sprite so she faces left
+}
+
+if (place_meeting(x, y + 1, oSolid)) { // if heidi is on the ground
+    if (keyboard_check(vk_up)) { // and the up arrow key is pressed
+			y_speed += -60; // make heidi jump by setting her y_speed to a negative value
+    } else { // otherwise, if heidi is on the ground but not jumping
+        y_speed = 0; // set her y_speed to 0 so she doesn't fall through the ground
+    }
+}
+
+if (y > room_height or y < 0 or x > room_width or x < 0) { // if the player is outside of the room
+    room_restart(); 
+}
+
+move_and_collide(x_speed, y_speed, oSolid);
